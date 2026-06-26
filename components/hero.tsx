@@ -77,7 +77,7 @@ export default function Hero() {
             </a>
 
             <a
-              href="/cv.pdf"
+              href="/images/kimhong-cv.pdf"
               download
               className="flex w-full items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white px-6 py-3 font-semibold text-slate-700 transition hover:-translate-y-1 hover:border-blue-400 hover:text-blue-600 sm:w-auto"
             >
