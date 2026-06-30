@@ -10,17 +10,26 @@ export default function Hero() {
 
       <div className="relative mx-auto grid min-h-screen max-w-6xl items-center gap-10 px-5 py-20 sm:px-6 md:grid-cols-2 md:gap-12 md:py-24">
         {/* Right side image — appears first on mobile */}
-        <div className="relative order-1 flex justify-center md:order-2 md:justify-end">
-          <div className="absolute h-56 w-56 rotate-6 rounded-[2rem] bg-gradient-to-br from-blue-500 to-indigo-600 sm:h-72 sm:w-72 md:h-80 md:w-80" />
+        {/* Right side image */}
+        <div className="relative order-1 flex items-center justify-center md:order-2">
+          {/* Soft glow */}
+          <div className="absolute h-96 w-96 rounded-full bg-blue-500/10 blur-3xl" />
 
-          <div className="relative h-56 w-56 overflow-hidden rounded-[2rem] border-4 border-white bg-slate-200 shadow-2xl sm:h-72 sm:w-72 md:h-80 md:w-80">
+          {/* Decorative ring */}
+          <div className="absolute h-[340px] w-[340px] rounded-full border-2 border-blue-200" />
+
+          {/* Small accent circle */}
+          <div className="absolute left-6 top-10 h-5 w-5 rounded-full bg-blue-600 shadow-lg" />
+
+          {/* Profile image */}
+          <div className="relative h-72 w-72 overflow-hidden rounded-full border-8 border-white shadow-[0_25px_60px_rgba(0,0,0,0.15)] sm:h-80 sm:w-80">
             <Image
-              src="/images/profile.jpg"
+              src="/images/profile.png"
               alt="Kimhong Try"
               fill
               priority
-              sizes="(max-width: 640px) 224px, (max-width: 768px) 288px, 320px"
-              className="object-cover"
+              sizes="(max-width:768px) 288px, 320px"
+              className="object-cover transition-transform duration-500 hover:scale-105"
             />
           </div>
         </div>
